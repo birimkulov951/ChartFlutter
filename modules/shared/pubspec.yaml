@@ -1,0 +1,21 @@
+name: shared
+version: 0.0.1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # This is our modular
+  core:
+    path: ../core
+  dependencies:
+    path: ../dependencies
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
