@@ -48,11 +48,11 @@ class ChartResult extends Equatable {
   @JsonKey(name: 'success')
   final bool isSuccessful;
 
-  const ChartResult(this.price, this.changePercent, this.changeAmount,
+  const ChartResult({this.price, this.changePercent, this.changeAmount,
       this.high, this.low, this.volumePrimary24h, this.volumeSecondary24h,
-      this.holdingsPrimary, this.holdingsSecondary, this.points,
+      this.holdingsPrimary, this.holdingsSecondary, this.points = const [],
       this.pointsStartFrom, this.errorMessage, this.fieldName,
-      this.isSuccessful);
+      this.isSuccessful});
 
   @override
   List<Object> get props => [price, changePercent, changeAmount, high, low,

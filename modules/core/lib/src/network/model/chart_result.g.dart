@@ -8,20 +8,20 @@ part of 'chart_result.dart';
 
 ChartResult _$ChartResultFromJson(Map<String, dynamic> json) {
   return ChartResult(
-    json['price'] as double,
-    json['changePercent'] as double,
-    json['changeAmount'] as double,
-    json['high'] as double,
-    json['low'] as double,
-    json['volumePrimary24h'] as double,
-    json['volumeSecondary24h'] as double,
-    json['holdingsPrimary'] as double,
-    json['holdingsSecondary'] as double,
-    (json['points'] as List)?.map((e) => e as double)?.toList(),
-    json['pointsStartFrom'] == null ? null : DateTime.parse(json['pointsStartFrom'] as String),
-    json['message'] as String,
-    json['fieldName'] as String,
-    json['success'] as bool,
+    price: json['price'] as double,
+    changePercent: json['changePercent'] as double,
+    changeAmount: json['changeAmount'] as double,
+    high: json['high'] as double,
+    low: json['low'] as double,
+    volumePrimary24h: json['volumePrimary24h'] as double,
+    volumeSecondary24h: json['volumeSecondary24h'] as double,
+    holdingsPrimary: json['holdingsPrimary'] as double,
+    holdingsSecondary: json['holdingsSecondary'] as double,
+    points: (json['points'] as List)?.map((e) => e as double)?.toList(),
+    pointsStartFrom: json['pointsStartFrom'] == null ? null : DateTime.parse(json['pointsStartFrom'] as String),
+    errorMessage: json['message'] as String,
+    fieldName: json['fieldName'] as String,
+    isSuccessful: json['success'] as bool,
   );
 }
 

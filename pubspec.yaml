@@ -57,6 +57,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  mockito:
+
+override_dpendency:
+  analyzer: ^0.41.2
+
+
+
 # The following section is specific to Flutter.
 flutter:
 

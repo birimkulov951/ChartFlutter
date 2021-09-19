@@ -35,7 +35,7 @@ class ChartBloc extends Bloc<ChartEvent, ChartState> {
         yield ChartError(response.errorMessage);
       } else {
 
-        if (response.points != null) {
+        if (response.points.isNotEmpty) {
           yield ChartHasData(response);
         } else {
           yield ChartNoData('ChartNoData');

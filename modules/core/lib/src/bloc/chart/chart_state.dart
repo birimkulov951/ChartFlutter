@@ -11,13 +11,7 @@ abstract class ChartState extends Equatable {
 
 class InitialChart extends ChartState {}
 
-class ChartLoading extends ChartState {
-
-  const ChartLoading();
-
-  @override
-  List<Object> get props => [];
-}
+class ChartLoading extends ChartState {}
 
 class ChartHasData extends ChartState {
 
