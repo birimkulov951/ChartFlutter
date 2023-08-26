@@ -1,3 +1,3 @@
 # ChartFlutter
 
-A charting app draws charts of cryptocurrency pairs. Job application project.
+App draws charts of cryptocurrency pairs. Job application project.
